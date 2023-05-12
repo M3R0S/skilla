@@ -1,0 +1,11 @@
+# Base
+.git
+
+# Modueles
+node_modules
+
+#build
+/build
+
+# settings
+.vscode

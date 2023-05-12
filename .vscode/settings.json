@@ -1,0 +1,10 @@
+{
+    "scss.validate": false,
+    "css.validate": false,
+    "editor.tabSize": 4,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.stylelint": true,
+        "source.fixAll.eslint": true,
+        "source.removeUnusedImports": true,
+    },
+}
