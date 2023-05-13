@@ -1,13 +1,6 @@
+import { AppRouter } from "./providers/Router/ui/AppRouter";
+
 export const App = () => {
-    return (
-        <div
-            style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                height: "100vh",
-            }}
-        ></div>
-    );
+    return <AppRouter />;
 };
 
