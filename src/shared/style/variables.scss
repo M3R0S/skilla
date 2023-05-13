@@ -1,0 +1,44 @@
+@import "./fonts";
+
+:root {
+    // ? Color
+    --color-primary: #002cfb;
+    --color-primary-hover: #0024cb;
+    --color-primary-active: #274bc8;
+    --color-white: #fff;
+
+    // ? Cursor
+    --cursor-pointer: url("../assets/svg/cursor.svg") 6 0, pointer;
+
+    // ? Font family
+    --font-family-sfd-regular: "SF Pro Display Regular";
+    --font-family-sfd-medium: "SF Pro Display Medium";
+    --font-family-sfd-semibold: "SF Pro Display Semibold";
+
+    // ? Font size
+    --font-size-14: 1.4rem;
+    --font-size-16: 1.6rem;
+
+    // ? Line height
+    --line-height-20: 20px;
+    --line-height-24: 24px;
+
+    // ! Font
+
+    // ? Font 14 px
+    --font-14-lh-20-fw-400: var(--font-size-14) / var(--line-height-20)
+        var(--font-family-sfd-regular);
+    --font-14-lh-20-fw-500: var(--font-size-14) / var(--line-height-20)
+        var(--font-family-sfd-medium);
+    --font-14-lh-20-fw-600: var(--font-size-14) / var(--line-height-20)
+        var(--font-family-sfd-semibold);
+
+    // ? Font 16 px
+    --font-16-lh-24-fw-400: var(--font-size-16) / var(--line-height-24)
+        var(--font-family-sfd-regular);
+    --font-16-lh-24-fw-500: var(--font-size-16) / var(--line-height-24)
+        var(--font-family-sfd-medium);
+    --font-16-lh-24-fw-600: var(--font-size-16) / var(--line-height-24)
+        var(--font-family-sfd-semibold);
+}
+
