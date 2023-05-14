@@ -1,0 +1,12 @@
+.stats_line {
+    border-radius: 1.2rem;
+    width: 156px;
+    height: 6px;
+    background: var(--color-stats-line);
+
+    .color_line {
+        border-radius: 1.2rem;
+        height: 6px;
+    }
+}
+

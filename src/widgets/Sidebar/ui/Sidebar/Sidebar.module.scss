@@ -1,5 +1,5 @@
 .sidebar {
-    width: 240px;
+    width: var(--width-sidebar);
     min-height: 100vh;
     background: var(--color-sidebar);
 }

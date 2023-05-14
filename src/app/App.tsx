@@ -1,13 +1,17 @@
 import { AppRouter } from "./providers/Router/ui/AppRouter";
 
 import { Sidebar } from "widgets/Sidebar";
-import { HStack } from "shared/ui/Stack";
+import { Navbar } from "widgets/Navbar";
+import { HStack, VStack } from "shared/ui/Stack";
 
 export const App = () => {
     return (
         <HStack>
             <Sidebar />
-            <AppRouter />
+            <VStack>
+                <Navbar />
+                <AppRouter />
+            </VStack>
         </HStack>
     );
 };

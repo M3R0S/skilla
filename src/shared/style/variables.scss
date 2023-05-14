@@ -2,17 +2,26 @@
 
 :root {
     // ? Color
+    --color-black: #122945;
     --color-primary: #002cfb;
     --color-primary-hover: #0024cb;
     --color-primary-active: #274bc8;
     --color-white: #fff;
     --color-white-transparent-60: rgb(255 255 255 / 60%);
-    --color-black: #122945;
-    --color-yellow: #ffd500;
     --color-sidebar: #091336;
+    --color-page: #e5e5e5;
+    --color-header: #899cb1;
+    --color-yellow: #ffd500;
+    --color-green: #00a775;
+    --color-red: #ea1a4f;
+    --color-stats-line: #dee6f5;
 
     // ? Transition
     --transition-all-200ms: all 0.2s;
+
+    // ? Size
+    --height-navbar: 64px;
+    --width-sidebar: 240px;
 
     // ? Cursor
     --cursor-pointer: url("../assets/svg/cursor.svg") 6 0, pointer;
@@ -24,11 +33,13 @@
 
     // ? Font size
     --font-size-14: 1.4rem;
+    --font-size-15: 1.5rem;
     --font-size-16: 1.6rem;
 
     // ? Line height
-    --line-height-20: 20px;
-    --line-height-24: 24px;
+    --line-height-20: 2rem;
+    --line-height-21: 2.1rem;
+    --line-height-24: 2.4rem;
 
     // ! Font
 
@@ -38,6 +49,14 @@
     --font-14-lh-20-fw-500: var(--font-size-14) / var(--line-height-20)
         var(--font-family-sfd-medium);
     --font-14-lh-20-fw-600: var(--font-size-14) / var(--line-height-20)
+        var(--font-family-sfd-semibold);
+
+    // ? Font 15 px
+    --font-15-lh-21-fw-400: var(--font-size-15) / var(--line-height-21)
+        var(--font-family-sfd-regular);
+    --font-15-lh-21-fw-500: var(--font-size-15) / var(--line-height-21)
+        var(--font-family-sfd-medium);
+    --font-15-lh-21-fw-600: var(--font-size-15) / var(--line-height-21)
         var(--font-family-sfd-semibold);
 
     // ? Font 16 px

@@ -11,7 +11,32 @@
         color: var(--color-black);
     }
 
+    &.header {
+        color: var(--color-header);
+    }
+
+    &.green {
+        color: var(--color-green);
+    }
+
+    &.yellow {
+        color: var(--color-yellow);
+    }
+
+    &.red {
+        color: var(--color-red);
+    }
+
     &.size_16 {
         font: var(--font-16-lh-24-fw-500);
     }
+
+    &.size_15 {
+        font: var(--font-15-lh-21-fw-400);
+    }
+
+    &.size_14 {
+        font: var(--font-14-lh-20-fw-400);
+    }
 }
+

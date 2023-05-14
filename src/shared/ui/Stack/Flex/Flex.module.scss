@@ -70,6 +70,10 @@
             gap: 0.4rem;
         }
 
+        &_7 {
+            gap: 0.7rem;
+        }
+
         &_8 {
             gap: 0.8rem;
         }
@@ -82,13 +86,25 @@
             gap: 3.2rem;
         }
 
+        &_56 {
+            gap: 5.6rem;
+        }
+
         &_64 {
             gap: 6.4rem;
+        }
+
+        &_86 {
+            gap: 8.6rem;
         }
 
         &_row {
             &_4 {
                 row-gap: 0.4rem;
+            }
+
+            &_7 {
+                row-gap: 0.7rem;
             }
 
             &_8 {
@@ -103,14 +119,26 @@
                 row-gap: 3.2rem;
             }
 
+            &_56 {
+                row-gap: 5.6rem;
+            }
+
             &_64 {
                 row-gap: 6.4rem;
+            }
+
+            &_86 {
+                row-gap: 8.6rem;
             }
         }
 
         &_column {
             &_4 {
                 column-gap: 0.4rem;
+            }
+
+            &_7 {
+                column-gap: 0.7rem;
             }
 
             &_8 {
@@ -125,8 +153,16 @@
                 column-gap: 3.2rem;
             }
 
+            &_56 {
+                column-gap: 5.6rem;
+            }
+
             &_64 {
                 column-gap: 6.4rem;
+            }
+
+            &_86 {
+                column-gap: 8.6rem;
             }
         }
     }

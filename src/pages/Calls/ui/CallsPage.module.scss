@@ -1,3 +1,5 @@
 .calls_page {
-    // todo
+    width: calc(100vw - var(--width-sidebar));
+    min-height: calc(100vh - var(--height-navbar));
+    background: var(--color-page);
 }
