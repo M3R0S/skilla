@@ -1,0 +1,48 @@
+.item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-left: 0.3rem solid transparent;
+    height: 5.2rem;
+
+    .icon_wrapper {
+        width: 45px;
+
+        .icon {
+            fill: var(--color-white-transparent-60);
+            transition: var(--transition-all-200ms);
+        }
+    }
+
+    .text {
+        transition: var(--transition-all-200ms);
+    }
+
+    &.active,
+    &:hover,
+    &:focus {
+        .icon {
+            fill: var(--color-white);
+        }
+
+        .text {
+            color: var(--color-white);
+        }
+    }
+
+    &.active {
+        border-left: 0.3rem solid var(--color-primary);
+
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     right: 22px;
+        //     border-radius: 50%;
+        //     width: 8px;
+        //     height: 8px;
+        //     box-shadow: 0 3px 8px rgb(237 218 1 / 50%);
+        //     background: var(--color-yellow);
+        // }
+    }
+}
+

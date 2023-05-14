@@ -6,6 +6,13 @@
     --color-primary-hover: #0024cb;
     --color-primary-active: #274bc8;
     --color-white: #fff;
+    --color-white-transparent-60: rgb(255 255 255 / 60%);
+    --color-black: #122945;
+    --color-yellow: #ffd500;
+    --color-sidebar: #091336;
+
+    // ? Transition
+    --transition-all-200ms: all 0.2s;
 
     // ? Cursor
     --cursor-pointer: url("../assets/svg/cursor.svg") 6 0, pointer;

@@ -10,12 +10,27 @@ const ButtonNotMemo = <P extends ButtonProps>(props: P) => {
         children,
         theme = "without_filling",
         size = "14",
-        state = "default",
+        justifyContent = "center",
+        alignItems = "center",
+        ...otherProps
     } = props;
 
-    const additional = [className, cl[theme], cl[`size_${size}`], cl[state]];
+    const additional = [
+        className,
+        cl[theme],
+        cl[`size_${size}`],
+        cl[`justify_content_${justifyContent}`],
+        cl[`align_items_${alignItems}`],
+    ];
 
-    return <button className={classNames(cl.button, additional)}>{children}</button>;
+    return (
+        <button
+            className={classNames(cl.button, additional)}
+            {...otherProps}
+        >
+            {children}
+        </button>
+    );
 };
 
 const ButtonMemo = memo<ButtonMemoProps>(ButtonNotMemo);

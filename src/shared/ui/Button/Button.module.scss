@@ -1,95 +1,129 @@
 .button {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    transition: var(--transition-all-200ms);
     cursor: var(--cursor-pointer);
-}
 
-.without_filling {
-    &.size_14 {
-        font: var(--font-14-lh-20-fw-500);
-    }
-
-    &.size_16 {
-        font: var(--font-16-lh-24-fw-500);
-    }
-
-    &.default {
+    &.without_filling {
         color: var(--color-primary);
+
+        &:hover,
+        &:focus {
+            color: var(--color-primary-hover);
+        }
+
+        &:active {
+            color: var(--color-primary-active);
+        }
+
+        &.size_14 {
+            font: var(--font-14-lh-20-fw-500);
+        }
+
+        &.size_16 {
+            font: var(--font-16-lh-24-fw-500);
+        }
     }
 
-    &.hover {
-        color: var(--color-primary-hover);
-    }
-
-    &.active {
-        color: var(--color-primary-active);
-    }
-}
-
-.primary {
-    border-radius: 0.4rem;
-    color: var(--color-white);
-
-    &.size_14 {
-        width: 12.2rem;
-        height: 4rem;
-        font: var(--font-14-lh-20-fw-500);
-    }
-
-    &.size_16 {
-        width: 20rem;
-        height: 4.8rem;
-        font: var(--font-16-lh-24-fw-500);
-    }
-
-    &.size_16_icon {
-        width: 20rem;
-        height: 5.2rem;
-        font: var(--font-16-lh-24-fw-500);
-    }
-
-    &.default {
-        background: var(--color-primary);
-    }
-
-    &.hover {
-        background: var(--color-primary-hover);
-    }
-
-    &.active {
-        background: var(--color-primary-active);
-    }
-}
-
-.secondary {
-    border-radius: 0.4rem;
-
-    &.size_14 {
-        width: 12.2rem;
-        height: 4rem;
-        font: var(--font-14-lh-20-fw-500);
-    }
-
-    &.size_16 {
-        width: 20rem;
-        height: 4.8rem;
-        font: var(--font-16-lh-24-fw-500);
-    }
-
-    &.default {
-        border: 0.1rem solid var(--color-primary);
-        color: var(--color-primary);
-    }
-
-    &.hover {
+    &.primary {
+        border-radius: 0.4rem;
         color: var(--color-white);
-        background: var(--color-primary-hover);
+        background: var(--color-primary);
+
+        &:hover,
+        &:focus {
+            background: var(--color-primary-hover);
+        }
+
+        &:active {
+            background: var(--color-primary-active);
+        }
+
+        &.size_14 {
+            width: 12.2rem;
+            height: 4rem;
+            font: var(--font-14-lh-20-fw-500);
+        }
+
+        &.size_16 {
+            width: 20rem;
+            height: 4.8rem;
+            font: var(--font-16-lh-24-fw-500);
+        }
+
+        &.size_16_icon {
+            width: 20rem;
+            height: 5.2rem;
+            font: var(--font-16-lh-24-fw-500);
+        }
     }
 
-    &.active {
-        border: 0.1rem solid var(--color-primary-active);
-        color: var(--color-primary-active);
+    &.secondary {
+        border: 0.1rem solid var(--color-primary);
+        border-radius: 0.4rem;
+        color: var(--color-primary);
+
+        &:hover,
+        &:focus {
+            color: var(--color-white);
+            background: var(--color-primary-hover);
+        }
+
+        &:active {
+            border: 0.1rem solid var(--color-primary-active);
+            color: var(--color-primary-active);
+        }
+
+        &.size_14 {
+            width: 12.2rem;
+            height: 4rem;
+            font: var(--font-14-lh-20-fw-500);
+        }
+
+        &.size_16 {
+            width: 20rem;
+            height: 4.8rem;
+            font: var(--font-16-lh-24-fw-500);
+        }
+    }
+
+    &.justify_content {
+        &_normal {
+            justify-content: normal;
+        }
+
+        &_start {
+            justify-content: flex-start;
+        }
+
+        &_center {
+            justify-content: center;
+        }
+
+        &_end {
+            justify-content: flex-end;
+        }
+
+        &_space_between {
+            justify-content: space-between;
+        }
+    }
+
+    &.align_items {
+        &_normal {
+            align-items: normal;
+        }
+
+        &_start {
+            align-items: flex-start;
+        }
+
+        &_center {
+            align-items: center;
+        }
+
+        &_end {
+            align-items: flex-end;
+        }
     }
 }
 

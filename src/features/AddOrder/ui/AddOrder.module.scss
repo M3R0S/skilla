@@ -1,0 +1,15 @@
+.add_order {
+    position: relative;
+    column-gap: 1.7rem;
+
+    .text {
+        margin-left: 2.4rem;
+    }
+
+    .icon {
+        position: absolute;
+        right: 2rem;
+        top: 1.4rem;
+    }
+}
+

@@ -1,0 +1,17 @@
+.text {
+    &.white {
+        color: var(--color-white);
+    }
+
+    &.white_transparent {
+        color: var(--color-white-transparent-60);
+    }
+
+    &.black {
+        color: var(--color-black);
+    }
+
+    &.size_16 {
+        font: var(--font-16-lh-24-fw-500);
+    }
+}
