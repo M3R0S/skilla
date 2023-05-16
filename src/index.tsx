@@ -5,12 +5,16 @@ import "index.scss";
 
 import { App } from "./app/App";
 
+import { StoreProvider } from "app/providers/Store";
+
 const element = document.getElementById("root") as HTMLElement;
 const root = ReactDOM.createRoot(element);
 
 root.render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
+    <StoreProvider>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </StoreProvider>
 );
 

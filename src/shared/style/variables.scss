@@ -4,12 +4,15 @@
     // ? Color
     --color-black: #122945;
     --color-primary: #002cfb;
-    --color-primary-hover: #0024cb;
+    --color-primary-hover: rgb(0 36 203 / 100%);
     --color-primary-active: #274bc8;
+    --color-secondary: rgb(94 119 147 / 100%);
     --color-white: #fff;
+    --color-blue: rgb(0 95 248 / 100%);
     --color-white-transparent-60: rgb(255 255 255 / 60%);
     --color-sidebar: #091336;
     --color-page: #e5e5e5;
+    --color-border-listbox: #eaf0fa;
     --color-header: #899cb1;
     --color-yellow: #ffd500;
     --color-green: #00a775;
@@ -26,6 +29,10 @@
     // ? Cursor
     --cursor-pointer: url("../assets/svg/cursor.svg") 6 0, pointer;
 
+    // ? z-index
+    --z-index-listbox: 20;
+    --z-index-menu: 30;
+
     // ? Font family
     --font-family-sfd-regular: "SF Pro Display Regular";
     --font-family-sfd-medium: "SF Pro Display Medium";
@@ -35,11 +42,14 @@
     --font-size-14: 1.4rem;
     --font-size-15: 1.5rem;
     --font-size-16: 1.6rem;
+    --font-size-18: 1.8rem;
 
     // ? Line height
     --line-height-20: 2rem;
     --line-height-21: 2.1rem;
+    --line-height-22: 2.2rem;
     --line-height-24: 2.4rem;
+    --line-height-28: 2.4rem;
 
     // ! Font
 
@@ -54,6 +64,8 @@
     // ? Font 15 px
     --font-15-lh-21-fw-400: var(--font-size-15) / var(--line-height-21)
         var(--font-family-sfd-regular);
+    --font-15-lh-28-fw-400: var(--font-size-15) / var(--line-height-28)
+        var(--font-family-sfd-regular);
     --font-15-lh-21-fw-500: var(--font-size-15) / var(--line-height-21)
         var(--font-family-sfd-medium);
     --font-15-lh-21-fw-600: var(--font-size-15) / var(--line-height-21)
@@ -65,6 +77,14 @@
     --font-16-lh-24-fw-500: var(--font-size-16) / var(--line-height-24)
         var(--font-family-sfd-medium);
     --font-16-lh-24-fw-600: var(--font-size-16) / var(--line-height-24)
+        var(--font-family-sfd-semibold);
+
+    // ? Font 16 px
+    --font-18-lh-22-fw-400: var(--font-size-18) / var(--line-height-22)
+        var(--font-family-sfd-regular);
+    --font-18-lh-22-fw-500: var(--font-size-18) / var(--line-height-22)
+        var(--font-family-sfd-medium);
+    --font-18-lh-22-fw-600: var(--font-size-18) / var(--line-height-22)
         var(--font-family-sfd-semibold);
 }
 

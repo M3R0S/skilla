@@ -7,6 +7,10 @@ html {
     font-size: 10px;
 }
 
+body {
+    overflow: hidden;
+}
+
 button {
     border: none;
     background: none;
@@ -14,5 +18,9 @@ button {
 
 a {
     text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 

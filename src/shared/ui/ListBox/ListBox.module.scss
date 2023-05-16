@@ -1,0 +1,63 @@
+.list_box {
+    position: relative;
+    color: var(--color-header);
+
+    .arrow {
+        padding-left: 1rem;
+        cursor: var(--cursor-pointer);
+    }
+
+    .arrow_open {
+        fill: var(--color-primary);
+    }
+
+    .arrow_close {
+        fill: var(--color-header);
+    }
+
+    &.organization {
+        .trigger {
+            font: var(--font-15-lh-21-fw-400);
+            white-space: nowrap;
+            color: var(--color-header);
+            cursor: var(--cursor-pointer);
+        }
+
+        .options {
+            position: absolute;
+            right: 0%;
+            top: 2.7rem;
+            z-index: var(--z-index-listbox);
+            border: 0.1rem solid var(--color-border-listbox);
+            border-radius: 0.4rem;
+            box-shadow: 0.4rem 1.6rem 5rem rgb(129 135 163 / 24%);
+            background: var(--color-white);
+
+            .option {
+                padding: 1rem 0 1rem 2rem;
+                width: 308px;
+                font: var(--font-15-lh-28-fw-400);
+                cursor: var(--cursor-pointer);
+
+                &:hover,
+                &:focus,
+                &.active {
+                    color: rgb(0 44 251 / 87%);
+                    background: rgb(0 44 251 / 13%);
+
+                    &:nth-of-type(1) {
+                        border-radius: 0.4rem 0.4rem 0 0;
+                    }
+
+                    &:nth-last-of-type(1) {
+                        border-radius: 0 0 0.4rem 0.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // &.filter {
+    // }
+}
+

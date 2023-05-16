@@ -70,6 +70,10 @@
             gap: 0.4rem;
         }
 
+        &_6 {
+            gap: 0.6rem;
+        }
+
         &_7 {
             gap: 0.7rem;
         }
@@ -78,12 +82,32 @@
             gap: 0.8rem;
         }
 
+        &_10 {
+            gap: 1rem;
+        }
+
         &_16 {
             gap: 1.6rem;
         }
 
+        &_12 {
+            gap: 1.2rem;
+        }
+
+        &_20 {
+            gap: 2rem;
+        }
+
+        &_24 {
+            gap: 2.4rem;
+        }
+
         &_32 {
             gap: 3.2rem;
+        }
+
+        &_46 {
+            gap: 4.6rem;
         }
 
         &_56 {
@@ -103,6 +127,10 @@
                 row-gap: 0.4rem;
             }
 
+            &_6 {
+                row-gap: 0.6rem;
+            }
+
             &_7 {
                 row-gap: 0.7rem;
             }
@@ -111,12 +139,32 @@
                 row-gap: 0.8rem;
             }
 
+            &_10 {
+                row-gap: 1rem;
+            }
+
+            &_12 {
+                row-gap: 1.2rem;
+            }
+
             &_16 {
                 row-gap: 1.6rem;
             }
 
+            &_20 {
+                row-gap: 2rem;
+            }
+
+            &_24 {
+                row-gap: 2.4rem;
+            }
+
             &_32 {
                 row-gap: 3.2rem;
+            }
+
+            &_46 {
+                row-gap: 4.6rem;
             }
 
             &_56 {
@@ -141,16 +189,40 @@
                 column-gap: 0.7rem;
             }
 
+            &_6 {
+                column-gap: 0.6rem;
+            }
+
             &_8 {
                 column-gap: 0.8rem;
+            }
+
+            &_10 {
+                column-gap: 1rem;
+            }
+
+            &_12 {
+                column-gap: 1.2rem;
             }
 
             &_16 {
                 column-gap: 1.6rem;
             }
 
+            &_20 {
+                column-gap: 2rem;
+            }
+
+            &_24 {
+                column-gap: 2.4rem;
+            }
+
             &_32 {
                 column-gap: 3.2rem;
+            }
+
+            &_46 {
+                column-gap: 4.6rem;
             }
 
             &_56 {

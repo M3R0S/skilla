@@ -1,0 +1,87 @@
+.menu {
+    position: relative;
+
+    .btn {
+        display: flex;
+        align-items: center;
+        cursor: var(--cursor-pointer);
+
+        .arrow {
+            padding-left: 1rem;
+            cursor: var(--cursor-pointer);
+        }
+
+        .arrow_open {
+            fill: var(--color-primary);
+        }
+
+        .arrow_close {
+            fill: var(--color-header);
+        }
+    }
+
+    .list {
+        position: absolute;
+        right: 0%;
+        top: 4.7rem;
+        display: flex;
+        flex-direction: column;
+        border: 0.1rem solid #eaf0fa;
+        border-radius: 0.4rem;
+        padding: 2rem 0 3.2rem;
+        width: 368px;
+        background: var(--color-white);
+        row-gap: 1.6rem;
+
+        .logout {
+            fill: rgb(173 191 223 / 100%);
+            transition: var(--transition-all-200ms);
+            cursor: var(--cursor-pointer);
+
+            &:hover {
+                fill: var(--color-primary-hover);
+            }
+        }
+
+        .header {
+            padding: 0 3.2rem;
+        }
+
+        .title {
+            margin-left: 3.2rem;
+        }
+
+        .text_post {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 7.4rem;
+                top: 0.8rem;
+                display: block;
+                width: 4px;
+                height: 4px;
+                background: url("/shared/assets/icons/ellipse4x4.png") no-repeat;
+            }
+        }
+
+        .br {
+            border: 0.1rem solid #eaf0fa;
+        }
+
+        .item {
+            display: flex;
+            column-gap: 1.2rem;
+            align-items: center;
+            padding-left: 3.2rem;
+            height: 48px;
+
+            &.active {
+                color: var(--color-primary-hover);
+                background: rgb(0 44 251 / 13%);
+            }
+        }
+    }
+}
+
