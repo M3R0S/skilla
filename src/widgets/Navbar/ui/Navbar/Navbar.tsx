@@ -12,18 +12,19 @@ import { DateNow } from "entities/DateNow";
 import { HStack } from "shared/ui/Stack";
 
 export const Navbar: FC<NavbarProps> = memo((props) => {
-    const { className } = props;
+    const { className, page } = props;
 
     return (
-        <HStack
-            justifyContent="space_between"
-            className={classNames(cl.navbar, [className])}
-        >
+        <HStack className={classNames(cl.navbar, className)}>
             <HStack columnGap="86">
                 <DateNow />
-                <DisplayingStatistics />
+                {page === "calls" && <DisplayingStatistics />}
             </HStack>
-            <HStack columnGap="64">
+            <HStack
+                grow="1"
+                justifyContent="end"
+                columnGap="64"
+            >
                 <GlobalSearch />
                 <HStack columnGap="46">
                     <ChangeOrganization />

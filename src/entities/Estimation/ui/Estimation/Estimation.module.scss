@@ -1,0 +1,40 @@
+.estimation {
+    border-radius: 0.4rem;
+    padding: 0.3rem 0.8rem;
+    font: var(--font-14-lh-20-fw-400);
+
+    &.great {
+        border: 0.1rem solid var(--color-green);
+        color: var(--color-green);
+        background: var(--color-lightgreen);
+    }
+
+    &.well {
+        border: 0.1rem solid var(--color-ui-icon);
+        color: var(--color-black);
+        background: var(--color-ui-secondary);
+    }
+
+    &.bad {
+        border: 0.1rem solid var(--color-red);
+        color: var(--color-red);
+        background: var(--color-lightred);
+    }
+}
+
+.ellipses {
+    width: 28px;
+
+    .great_svg {
+        fill: var(--color-green);
+    }
+
+    .well_svg {
+        fill: var(--color-ui-icon);
+    }
+
+    .bad_svg {
+        fill: var(--color-red);
+    }
+}
+

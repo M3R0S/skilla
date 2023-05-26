@@ -17,6 +17,8 @@ export const Flex: FC<FlexProps> = (props) => {
         gap,
         max,
         wrap = "nowrap",
+        grow,
+        ...otherProps
     } = props;
 
     const classes = [
@@ -32,8 +34,16 @@ export const Flex: FC<FlexProps> = (props) => {
         [cl.max]: max,
         [cl[`gap_row_${rowGap}`]]: Boolean(rowGap),
         [cl[`gap_column_${columnGap}`]]: Boolean(columnGap),
+        [cl[`grow_${grow}`]]: Boolean(grow),
     };
 
-    return <Tag className={classNames(cl.flex, classes, mods)}>{children}</Tag>;
+    return (
+        <Tag
+            className={classNames(cl.flex, classes, mods)}
+            {...otherProps}
+        >
+            {children}
+        </Tag>
+    );
 };
 

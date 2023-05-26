@@ -33,7 +33,7 @@ export const TotalStatistics: FC<TotalStatisticsProps> = memo((props) => {
             rowGap="7"
             className={className}
         >
-            <Text.NotMemo
+            <Text
                 Tag="h2"
                 theme="black"
                 size="14"
@@ -41,15 +41,15 @@ export const TotalStatistics: FC<TotalStatisticsProps> = memo((props) => {
                 {type === "newCalls" && "Новые звонки "}
                 {type === "qualityConversations" && "Качество разговоров "}
                 {type === "conversionOrder" && "Конверсия в заказ "}
-                <Text.NotMemo
+                <Text
                     size="14"
                     theme={setBackground()}
                 >
                     {type === "newCalls" && `${currentValue} из ${maxValue} шт`}
                     {type === "qualityConversations" && `${procentValue} %`}
                     {type === "conversionOrder" && `${procentValue} %`}
-                </Text.NotMemo>
-            </Text.NotMemo>
+                </Text>
+            </Text>
             <StatsLine
                 procentValue={procentValue}
                 background={setBackground()}

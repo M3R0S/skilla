@@ -1,10 +1,10 @@
-import { memo } from "react";
+import { FC } from "react";
 import classNames from "classnames";
 
 import cl from "./Text.module.scss";
-import { TextNotMemoProps, TextMemoProps } from "./Text.types";
+import { TextProps } from "./Text.types";
 
-const TextNotMemo = <P extends TextNotMemoProps>(props: P) => {
+export const Text: FC<TextProps> = (props) => {
     const {
         className,
         children,
@@ -24,8 +24,4 @@ const TextNotMemo = <P extends TextNotMemoProps>(props: P) => {
         </Tag>
     );
 };
-
-const TextMemo = memo<TextMemoProps>(TextNotMemo);
-
-export const Text = Object.assign(TextMemo, { NotMemo: TextNotMemo });
 

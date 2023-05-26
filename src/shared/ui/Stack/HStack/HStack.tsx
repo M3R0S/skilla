@@ -6,9 +6,10 @@ import { Flex } from "../Flex/Flex";
 export const HStack: FC<HStackProps> = (props) => {
     return (
         <Flex
-            {...props}
-            direction="row"
             alignItems="center"
+            direction="row"
+            {...props}
         />
     );
 };
+

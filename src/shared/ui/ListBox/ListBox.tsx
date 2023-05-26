@@ -17,12 +17,14 @@ const ListBox = <V extends string>(props: ListBoxProps<V>) => {
             as="div"
             value={value ?? defaultValue}
             onChange={onChangeValue}
-            className={classNames(cl.list_box, className, cl[theme])}
+            className={classNames(cl.list_box, className)}
         >
             {({ open }) => (
                 <>
                     <HListbox.Button className={cl.trigger}>
-                        {value ?? defaultValue}
+                        {options.find((option) => option.value === value)?.title ??
+                            options.find((option) => option.value === value)?.content ??
+                            defaultValue}
                         {open ? (
                             <ArrowCloseSvg className={classNames(cl.arrow, cl.arrow_open)} />
                         ) : (
@@ -39,8 +41,13 @@ const ListBox = <V extends string>(props: ListBoxProps<V>) => {
                                 value={option.value}
                                 as={Fragment}
                             >
-                                {({ active }) => (
-                                    <li className={classNames(cl.option, { [cl.active]: active })}>
+                                {({ active, selected }) => (
+                                    <li
+                                        className={classNames(cl.option, cl[theme], {
+                                            [cl.active]: active,
+                                            [cl.selected]: selected,
+                                        })}
+                                    >
                                         {option.content}
                                     </li>
                                 )}

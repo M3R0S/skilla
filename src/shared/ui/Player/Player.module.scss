@@ -1,0 +1,67 @@
+.player {
+    border-radius: 4.8rem;
+    padding: 0.8rem 1.6rem 0.8rem 2rem;
+    background: rgb(234 240 250 / 100%);
+
+    .text {
+        margin-right: 1.2rem;
+    }
+
+    .pause,
+    .play {
+        margin-right: 0.8rem;
+
+        rect {
+            fill: var(--color-white);
+            transition: var(--transition-all-200ms);
+        }
+
+        path {
+            fill: var(--color-primary);
+            transition: var(--transition-all-200ms);
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            rect {
+                fill: var(--color-primary);
+            }
+
+            path {
+                fill: var(--color-white);
+            }
+        }
+    }
+
+    .time_info {
+        position: absolute;
+    }
+
+    .line {
+        margin-right: 1.2rem;
+        border-radius: 5rem;
+        width: 164px;
+        height: 4px;
+        background: var(--color-ui-icon);
+        cursor: var(--cursor-pointer);
+
+        &::-webkit-slider-thumb {
+            opacity: 0;
+        }
+    }
+
+    .download,
+    .close {
+        margin-right: 1.2rem;
+        fill: var(--color-ui-icon);
+        transition: var(--transition-all-200ms);
+
+        &:hover,
+        &:focus,
+        &:active {
+            fill: var(--color-primary);
+        }
+    }
+}
+

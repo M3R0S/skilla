@@ -16,7 +16,7 @@ export const SidebarNavItem: FC<SidebarNavItemProps> = memo((props) => {
     const isActive = location.pathname === to;
 
     return (
-        <AppLink.NotMemo
+        <AppLink
             to={to}
             className={classNames(cl.item, className, { [cl.active]: isActive })}
         >
@@ -27,7 +27,7 @@ export const SidebarNavItem: FC<SidebarNavItemProps> = memo((props) => {
                 <Svg className={classNames(cl.icon)} />
             </HStack>
             <Text theme={isActive ? "white" : "white_transparent"} className={cl.text}>{title}</Text>
-        </AppLink.NotMemo>
+        </AppLink>
     );
 });
 

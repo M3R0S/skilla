@@ -18,7 +18,7 @@ export const Menu = memo((props: MenuProps) => {
                 {items.map((item) => {
                     return (
                         <HMenu.Item
-                            key={""}
+                            key={item.href}
                             as={Fragment}
                         >
                             {({ active }) => (

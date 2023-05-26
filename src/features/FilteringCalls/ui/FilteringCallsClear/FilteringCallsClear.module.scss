@@ -1,0 +1,36 @@
+.filtering_calls_clear {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 0.4rem;
+
+    .close {
+        fill: var(--color-header);
+        transition: var(--transition-all-200ms);
+    }
+
+    .text {
+        transition: var(--transition-all-200ms);
+    }
+
+    &:hover,
+    &:focus {
+        .text {
+            color: var(--color-primary-hover);
+        }
+
+        .close {
+            fill: var(--color-primary-hover);
+        }
+    }
+
+    &:active {
+        .text {
+            color: var(--color-primary-active);
+        }
+
+        .close {
+            fill: var(--color-primary-active);
+        }
+    }
+}
+

@@ -12,12 +12,12 @@ export const SidebarLogo: FC<SidebarLogoProps> = memo((props) => {
     const { className } = props;
 
     return (
-        <AppLink.NotMemo
+        <AppLink
             className={classNames(cl.logo, [className])}
             to={PathRoutes.MAIN}
         >
             <LogoSvg />
-        </AppLink.NotMemo>
+        </AppLink>
     );
 });
 

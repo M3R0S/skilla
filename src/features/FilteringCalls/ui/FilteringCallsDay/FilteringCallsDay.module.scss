@@ -1,0 +1,96 @@
+.filtering_calls_day {
+    font: var(--font-14-lh-20-fw-400);
+
+    .listbox {
+        position: relative;
+
+        .btn {
+            display: flex;
+            align-items: center;
+            color: var(--color-primary);
+            cursor: var(--cursor-pointer);
+            gap: 0.8rem;
+
+            &_svg {
+                fill: var(--color-ui-icon);
+                transition: var(--transition-all-200ms);
+            }
+
+            &:hover,
+            &:focus {
+                .btn_svg {
+                    fill: var(--color-primary);
+                }
+            }
+        }
+
+        .svg {
+            fill: var(--color-ui-icon);
+            transition: var(--transition-all-200ms);
+
+            &:hover,
+            &:focus {
+                fill: var(--color-primary);
+            }
+        }
+
+        .options {
+            position: absolute;
+            right: 0%;
+            top: 3rem;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #eaf0fa;
+            border-radius: 0.4rem;
+            box-shadow: 0 0 26px rgb(233 237 243 / 80%);
+            background: var(--color-white);
+
+            .option {
+                padding: 1rem 2rem;
+                width: 200px;
+                color: var(--color-header);
+                cursor: var(--cursor-pointer);
+
+                &.active {
+                    color: var(--color-black);
+                    background: var(--color-ui-accent);
+                }
+
+                &.selected {
+                    color: var(--color-primary);
+                }
+            }
+
+            .option_date {
+                padding: 1rem 2rem;
+                width: 200px;
+            }
+
+            .dates {
+                padding: 0 2rem 1rem;
+
+                .date {
+                    border: none;
+                    width: 95px;
+                    font: var(--font-15-lh-24-fw-400);
+                    color: var(--color-ui-icon);
+                    transition: var(--transition-all-200ms);
+
+                    &:hover,
+                    &:focus {
+                        outline: none;
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+}
+
+::-webkit-calendar-picker-indicator {
+    // display: flex;
+    // width: 100%;
+    cursor: var(--cursor-pointer);
+}
+

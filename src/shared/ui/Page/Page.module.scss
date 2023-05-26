@@ -1,0 +1,13 @@
+.page {
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: 10rem;
+    width: calc(100vw - var(--width-sidebar));
+    height: calc(100vh - 10rem);
+    background: var(--color-page);
+
+    .target {
+        height: 10px;
+    }
+}
+

@@ -194,7 +194,7 @@ export const ProfileMenu: FC<ProfileMenuProps> = memo((props) => {
                                                     key={operator.id}
                                                 >
                                                     {({ active }) => (
-                                                        <Button.NotMemo
+                                                        <Button
                                                             justifyContent="start"
                                                             className={classNames(cl.item, {
                                                                 [cl.active]: active,
@@ -211,7 +211,7 @@ export const ProfileMenu: FC<ProfileMenuProps> = memo((props) => {
                                                             >
                                                                 {operator.name}
                                                             </Text>
-                                                        </Button.NotMemo>
+                                                        </Button>
                                                     )}
                                                 </Menu.Item>
                                             );

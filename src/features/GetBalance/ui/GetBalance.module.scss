@@ -1,0 +1,35 @@
+.get_balance {
+    padding: 1rem 1.2rem;
+    gap: 1rem;
+
+    .money {
+        transition: var(--transition-all-200ms);
+    }
+
+    .svg {
+        fill: var(--color-primary);
+        transition: var(--transition-all-200ms);
+    }
+
+    &:hover,
+    &:focus {
+        .money {
+            color: var(--color-primary-hover);
+        }
+
+        .svg {
+            fill: var(--color-primary-hover);
+        }
+    }
+
+    &:active {
+        .money {
+            color: var(--color-primary-active);
+        }
+
+        .svg {
+            fill: var(--color-primary-active);
+        }
+    }
+}
+

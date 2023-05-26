@@ -1,0 +1,16 @@
+.billing_calls {
+    margin: 0 12rem;
+    padding: 0 0 6rem 4rem;
+    min-height: 80vh;
+    background: var(--color-white);
+
+    .target {
+        width: 100%;
+        height: 30px;
+    }
+
+    .loader {
+        min-height: 80vh;
+    }
+}
+

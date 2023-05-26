@@ -12,7 +12,7 @@ export const Payment: FC<PaymentProps> = memo((props) => {
     const { className } = props;
 
     return (
-        <Button.NotMemo
+        <Button
             theme="primary"
             size="16_icon"
             justifyContent="start"
@@ -26,7 +26,7 @@ export const Payment: FC<PaymentProps> = memo((props) => {
                 Оплата
             </Text>
             <PaymentSvg className={cl.icon} />
-        </Button.NotMemo>
+        </Button>
     );
 });
 

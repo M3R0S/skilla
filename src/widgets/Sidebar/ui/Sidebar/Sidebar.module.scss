@@ -1,6 +1,7 @@
 .sidebar {
-    width: var(--width-sidebar);
-    min-height: 100vh;
+    overflow-y: auto;
+    height: 100vh;
+    min-width: var(--width-sidebar);
     background: var(--color-sidebar);
 }
 

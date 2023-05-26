@@ -1,10 +1,10 @@
-import { memo } from "react";
+import { FC } from "react";
 import classNames from "classnames";
 
 import cl from "./Button.module.scss";
-import { ButtonMemoProps, ButtonProps } from "./Button.types";
+import { ButtonProps } from "./Button.types";
 
-const ButtonNotMemo = <P extends ButtonProps>(props: P) => {
+export const Button: FC<ButtonProps> = (props) => {
     const {
         className,
         children,
@@ -25,6 +25,7 @@ const ButtonNotMemo = <P extends ButtonProps>(props: P) => {
 
     return (
         <button
+        
             className={classNames(cl.button, additional)}
             {...otherProps}
         >
@@ -32,8 +33,4 @@ const ButtonNotMemo = <P extends ButtonProps>(props: P) => {
         </button>
     );
 };
-
-const ButtonMemo = memo<ButtonMemoProps>(ButtonNotMemo);
-
-export const Button = Object.assign(ButtonMemo, { NotMemo: ButtonNotMemo });
 

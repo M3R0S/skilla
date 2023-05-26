@@ -11,9 +11,9 @@ export const GlobalSearch: FC<GlobalSearchProps> = memo((props) => {
     const { className } = props;
 
     return (
-        <Button.NotMemo className={classNames(cl.global_search, [className])}>
+        <Button className={classNames(cl.global_search, [className])}>
             <SearchSvg />
-        </Button.NotMemo>
+        </Button>
     );
 });
 

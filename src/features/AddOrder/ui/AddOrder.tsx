@@ -12,7 +12,7 @@ export const AddOrder: FC<AddOrderProps> = memo((props) => {
     const { className } = props;
 
     return (
-        <Button.NotMemo
+        <Button
             justifyContent="start"
             theme="primary"
             size="16_icon"
@@ -26,7 +26,7 @@ export const AddOrder: FC<AddOrderProps> = memo((props) => {
                 Добавить заказ
             </Text>
             <AddOrderSvg className={cl.icon} />
-        </Button.NotMemo>
+        </Button>
     );
 });
 

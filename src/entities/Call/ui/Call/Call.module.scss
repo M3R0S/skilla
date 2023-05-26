@@ -1,0 +1,49 @@
+.call {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50px 90px 130px 24% 16% 12% minmax(90px, auto);
+    border-top: 0.1rem solid rgb(234 240 250 / 100%);
+    padding: 1rem 4rem 1rem 0;
+    min-height: 45px;
+
+    .in_out {
+        .incoming {
+            fill: var(--color-primary);
+        }
+
+        .outgoing {
+            fill: var(--color-green);
+        }
+
+        .rejected {
+            fill: var(--color-red);
+        }
+    }
+
+    .worker {
+        .icons {
+            margin-right: 0.5rem;
+        }
+
+        .web_plug {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .duration {
+        .audio_wrapper {
+            width: 350px;
+            height: 48px;
+
+            .audio {
+                background: none;
+            }
+        }
+    }
+
+    .none_player {
+        display: none;
+    }
+}
+
