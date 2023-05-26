@@ -11,6 +11,7 @@ import { ReactComponent as WebSvg } from "shared/assets/svg/call/web.svg";
 import { ReactComponent as IncomingArrowSvg } from "shared/assets/svg/call/incoming_arrow.svg";
 import { ReactComponent as OutgoingArrowSvg } from "shared/assets/svg/call/outgoing_arrow.svg";
 import { ReactComponent as PhoneSvg } from "shared/assets/svg/call/phone.svg";
+import audio from "shared/assets/sound/sound_kish.mp3";
 import { validPhone } from "shared/lib/helpers/validPhone";
 import { normalizeTime } from "shared/lib/helpers/normalizeTime";
 import { HStack, VStack } from "shared/ui/Stack";
@@ -153,6 +154,7 @@ export const CallMain: FC<CallProps> = memo((props) => {
                     <Player
                         className={isHover ? undefined : cl.none_player}
                         duration={call.time}
+                        src={audio}
                     />
                 ) : (
                     <Text
