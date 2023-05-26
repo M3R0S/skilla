@@ -4,7 +4,7 @@ import cl from "./MainPage.module.scss";
 
 import { Navbar } from "widgets/Navbar";
 import audio from "shared/assets/sound/sound_kish.mp3";
-import { Page } from "shared/ui/Page";
+import { Page } from "widgets/Page";
 import { Player } from "shared/ui/Player";
 
 const MainPage: FC = memo(() => {
@@ -19,7 +19,10 @@ const MainPage: FC = memo(() => {
                     height: "100vh",
                 }}
             >
-                <Player src={audio} duration={236} />
+                <Player
+                    src={audio}
+                    duration={236}
+                />
             </div>
         </Page>
     );

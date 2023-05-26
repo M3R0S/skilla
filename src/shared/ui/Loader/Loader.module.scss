@@ -3,11 +3,13 @@
     align-items: center;
     justify-content: center;
 
-    // width: 100vw;
-    // height: 100vh;
-
     .svg {
         fill: var(--color-primary);
+    }
+
+    &.app {
+        width: 100%;
+        height: 100vh;
     }
 }
 

@@ -11,7 +11,7 @@ import {
     filteringCallsActions,
 } from "features/FilteringCalls";
 import { useAppDispatch, useAppSelector } from "shared/lib/hooks/useStore";
-import { Page } from "shared/ui/Page";
+import { Page } from "widgets/Page";
 
 const CallsPage: FC = memo(() => {
     const dispatch = useAppDispatch();
