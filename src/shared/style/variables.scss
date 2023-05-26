@@ -2,27 +2,27 @@
 
 :root {
     // ? Color
-    --color-black: #122945;
+    --color-black: rgb(18 41 69 / 100%);
     --color-primary: rgb(0 44 251 / 100%);
     --color-primary-hover: rgb(0 36 203 / 100%);
-    --color-primary-active: #274bc8;
+    --color-primary-active: rgb(39 75 200 / 100%);
     --color-ui-icon: rgb(173 191 223 / 100%);
     --color-ui-accent: rgb(0 44 251 / 13%);
     --color-text-secondary: rgb(94 119 147 / 100%);
     --color-ui-secondary: rgb(216 228 251 / 100%);
-    --color-white: #fff;
+    --color-white: rgb(255 255 255 / 100%);
     --color-blue: rgb(0 95 248 / 100%);
     --color-white-transparent-60: rgb(255 255 255 / 60%);
-    --color-sidebar: #091336;
-    --color-page: #e5e5e5;
-    --color-border-listbox: #eaf0fa;
-    --color-header: #899cb1;
-    --color-yellow: #ffd500;
+    --color-sidebar: rgb(9 19 54 / 100%);
+    --color-page: rgb(229 229 229 / 100%);
+    --color-border-listbox: rgb(234 240 250 / 100%);
+    --color-header: rgb(6 13 21 / 100%);
+    --color-yellow: rgb(255 213 0 / 100%);
     --color-green: rgb(40 168 121 / 100%);
     --color-lightgreen: rgb(219 248 239 / 100%);
     --color-red: rgb(234 26 79 / 100%);
     --color-lightred: rgb(254 233 239 / 100%);
-    --color-stats-line: #dee6f5;
+    --color-stats-line: rgb(222 230 245 / 100%);
 
     // ? Transition
     --transition-all-200ms: all 0.2s;
