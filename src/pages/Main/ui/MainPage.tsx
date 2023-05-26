@@ -3,8 +3,8 @@ import { FC, memo } from "react";
 import cl from "./MainPage.module.scss";
 
 import { Navbar } from "widgets/Navbar";
-import audio from "shared/assets/sound/sound_kish.mp3";
 import { Page } from "widgets/Page";
+import audio from "shared/assets/sound/sound_kish.mp3";
 import { Player } from "shared/ui/Player";
 
 const MainPage: FC = memo(() => {
