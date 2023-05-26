@@ -5,13 +5,13 @@ import cl from "./CallsPage.module.scss";
 import { BillingCalls, useGetCallsListQuery } from "widgets/BillingCalls";
 import { Navbar } from "widgets/Navbar";
 import { ControlCalls } from "widgets/ControlCalls";
+import { Page } from "widgets/Page";
 import {
     getFilteringCalls,
     getFilteringCallsLimit,
     filteringCallsActions,
 } from "features/FilteringCalls";
 import { useAppDispatch, useAppSelector } from "shared/lib/hooks/useStore";
-import { Page } from "widgets/Page";
 
 const CallsPage: FC = memo(() => {
     const dispatch = useAppDispatch();
