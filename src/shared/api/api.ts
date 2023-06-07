@@ -1,7 +1,11 @@
 export const BASE_URL = "https://api.skilla.ru/";
 
+export const HEADERS = {
+    Authorization: "Bearer testtoken",
+};
+
 export const CHAPTER = {
-    MANGO: "mango/",
+    MANGO: "mango",
 } as const;
 
 export const ENDPOINTS = {
@@ -11,8 +15,4 @@ export const ENDPOINTS = {
 
 export type CHAPTER = ValueOf<typeof CHAPTER>;
 export type ENDPOINTS = ValueOf<typeof ENDPOINTS>;
-
-export const HEADERS = {
-    Authorization: "Bearer testtoken",
-};
 

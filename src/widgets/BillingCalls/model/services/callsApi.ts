@@ -1,18 +1,11 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-
 import type { CallsState } from "../types/calls";
 
 import { FilteringCallsState } from "features/FilteringCalls";
 import { dateNow } from "shared/lib/helpers/dateNow";
-import { BASE_URL, CHAPTER, ENDPOINTS, HEADERS } from "shared/api/api";
+import { CHAPTER, ENDPOINTS } from "shared/api/api";
+import { rtkApi } from "shared/api/rtkApi";
 
-export const callsApi = createApi({
-    reducerPath: "callsApi",
-    baseQuery: fetchBaseQuery({
-        baseUrl: BASE_URL + CHAPTER.MANGO,
-        headers: HEADERS,
-        method: "POST",
-    }),
+export const callsApi = rtkApi.injectEndpoints({
     endpoints: (builder) => ({
         getCallsList: builder.query<CallsState, FilteringCallsState | null>({
             query: (params) => {
@@ -34,55 +27,23 @@ export const callsApi = createApi({
                     sources,
                 } = params;
 
-                let query: string = ENDPOINTS.GET_LIST;
-
-                if (dateStart) {
-                    query += `?date_start=${dateStart}`;
-                }
-                else {
-                    query += `?date_start=${date}`;
-                }
-
-                if (dateEnd) {
-                    query += `&date_end=${dateEnd}`;
-                }
-                else {
-                    query += `&date_end=${date}`;
-                }
-
-                if (inOut) {
-                    query += `&in_out=${inOut}`;
-                }
-
-                if (limit) {
-                    query += `&limit=${limit}`;
-                }
-
-                if (search) {
-                    query += `&search=${search}`;
-                }
-
-                if (persons) {
-                    query += `&from_persons[]=${persons}`;
-                }
-
-                if (calls) {
-                    query += `&from_type[]=${calls}`;
-                }
-
-                if (estimations === "noscript") {
-                    query += `&errors[]=noscript`;
-                }
-
-                if (sources) {
-                    query += `&sources[]=${sources}`;
-                }
-
-                return query;
+                return {
+                    url: `${CHAPTER.MANGO}/${ENDPOINTS.GET_LIST}`,
+                    params: {
+                        date_start: dateStart ? dateStart : date,
+                        date_end: dateEnd ? dateEnd : date,
+                        in_out: inOut,
+                        limit: limit ? limit : "100",
+                        search,
+                        "from_persons[]": persons,
+                        "from_type[]": calls,
+                        "errors[]": estimations === "noscript" ? "noscript" : estimations,
+                        "sources[]": sources,
+                    },
+                };
             },
         }),
     }),
 });
 
 export const { useLazyGetCallsListQuery, useGetCallsListQuery } = callsApi;
-
